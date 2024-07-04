@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282c34; /* 화면 전체의 배경색 변경 */
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 40px 0; /* 패딩을 늘려 타이틀과 로고를 아래로 이동 */
+  position: fixed;
+  top: 0;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-top: 60px
+}
+
+.App-title {
+  color: white;
+  font-size: 2em;
+}
+
+.App-menu {
+  margin-top: 20px;
+}
+
+.App-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+.App-menu li {
+  cursor: pointer;
+  color: white;
+  font-size: 1.2em;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.body {
+  margin: 150px auto; /* 좌우 마진 */
+  max-width: 1000px; /* 최대 너비 설정 */
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 150px; /* 상단 마진 */
+}
+
+.menu {
+  margin-bottom: 20px; /* 메뉴 간 간격 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+.addPlanContainer{
+  padding: 10px;
+  background-color: #3a3f47;
+  border-radius: 5px;
+  min-height: 50px; /* 최소 높이 */
+  max-height: 150px; /* 최대 높이 */
+  overflow-y: auto; /* 내용이 넘칠 경우 스크롤 */
+}
+.myplanContainer {
+  padding: 10px;
+  padding-bottom: 250px;
+  background-color: #3a3f47;
+  border-radius: 5px;
+  min-height: 50px; /* 최소 높이 */
+  max-height: 150px; /* 최대 높이 */
+  overflow-y: auto; /* 내용이 넘칠 경우 스크롤 */
+}
+
+.input-content {
+  width: calc(100% - 70px);
+  height: 30px;
+  padding: 5px;
+  margin-top: 10px; /* 상단 마진 조절 */
+  margin-bottom: 10px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  vertical-align: middle; /* 버튼과 텍스트 정렬 */
+}
+
+.button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block; /* 버튼 텍스트 가로정렬 */
+  margin-left: 10px; /* 버튼과 입력칸 간 간격 */
+}
+
+.task-container {
+  background-color: #3a3f47;
+  padding: 10px;
+  margin-bottom: 10px; /* 박스 간의 간격 */
+  border-bottom: 1px solid #555; /* 각 플랜을 구분하는 하단 구분선 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* 줄 바꿈 */
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  text-align: left; /* 내용 왼쪽 정렬 */
+  flex: 1; /* 남은 공간 채우기 */
+}
+
+.task-container button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block; /* 버튼 텍스트 가로정렬 */
+  margin-left: 10px;
+}
